@@ -31,6 +31,8 @@ var localizationOptions = new RequestLocalizationOptions()
 .AddSupportedCultures(supportedCultures)
 .AddSupportedUICultures(supportedCultures);
 
+app.UseRequestLocalization(localizationOptions);
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
