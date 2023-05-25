@@ -25,6 +25,12 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+var supportedCultures = new[] {"en", "fr", "es"};
+var localizationOptions = new RequestLocalizationOptions()
+.SetDefaultCulture(supportedCultures[0])
+.AddSupportedCultures(supportedCultures)
+.AddSupportedUICultures(supportedCultures);
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
