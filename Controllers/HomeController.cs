@@ -1,20 +1,25 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using LocalizationGlobalization.Models;
+using Microsoft.AspNetCore.Mvc.Localization;
 
 namespace LocalizationGlobalization.Controllers;
 
 public class HomeController : Controller
 {
+    private readonly IHtmlLocalizer<HomeController> _localizer;
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IHtmlLocalizer<HomeController> localizer)
     {
+        _localizer = localizer;
         _logger = logger;
     }
 
     public IActionResult Index()
     {
+        var test = _localizer["HelloWorld"];
+        ViewData["HelloWorld"] = test;
         return View();
     }
 
