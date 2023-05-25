@@ -9,6 +9,11 @@
       "LocalizationGlobalization/1.0.0": {
         "runtime": {
           "LocalizationGlobalization.dll": {}
+        },
+        "resources": {
+          "en/LocalizationGlobalization.resources.dll": {
+            "locale": "en"
+          }
         }
       }
     }

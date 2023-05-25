@@ -29,3 +29,16 @@
 /Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/obj/Debug/net7.0/LocalizationGlobalization.pdb
 /Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/obj/Debug/net7.0/LocalizationGlobalization.genruntimeconfig.cache
 /Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/obj/Debug/net7.0/ref/LocalizationGlobalization.dll
+/Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/bin/Debug/net7.0/en/LocalizationGlobalization.resources.dll
+/Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/obj/Debug/net7.0/LocalizationGlobalization.Resources.Views.Home.Index.en.resources
+/Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/obj/Debug/net7.0/LocalizationGlobalization.csproj.GenerateResource.cache
+/Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/obj/Debug/net7.0/en/LocalizationGlobalization.resources.cs
+/Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/obj/Debug/net7.0/en/LocalizationGlobalization.resources.dll
+/Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/bin/Debug/net7.0/es/LocalizationGlobalization.resources.dll
+/Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/bin/Debug/net7.0/fr/LocalizationGlobalization.resources.dll
+/Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/obj/Debug/net7.0/LocalizationGlobalization.Resources.Views.Home.Index.es.resources
+/Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/obj/Debug/net7.0/LocalizationGlobalization.Resources.Views.Home.Index.fr.resources
+/Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/obj/Debug/net7.0/es/LocalizationGlobalization.resources.cs
+/Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/obj/Debug/net7.0/es/LocalizationGlobalization.resources.dll
+/Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/obj/Debug/net7.0/fr/LocalizationGlobalization.resources.cs
+/Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/obj/Debug/net7.0/fr/LocalizationGlobalization.resources.dll

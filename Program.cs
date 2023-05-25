@@ -27,7 +27,7 @@ app.UseAuthorization();
 
 var supportedCultures = new[] {"en", "fr", "es"};
 var localizationOptions = new RequestLocalizationOptions()
-.SetDefaultCulture(supportedCultures[0])
+.SetDefaultCulture(supportedCultures[1])
 .AddSupportedCultures(supportedCultures)
 .AddSupportedUICultures(supportedCultures);
 

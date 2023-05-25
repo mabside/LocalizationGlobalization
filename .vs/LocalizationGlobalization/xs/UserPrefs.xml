@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{920E48D9-5F7E-4CA1-A1F3-86B6E930542B}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.LocalizationGlobalization PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Resources/Views/Home/Index.en.resx">
+    <Files>
+      <File FileName="Resources/Views/Home/Index.en.resx" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LocalizationGlobalization">
+            <Node name="LocalizationGlobalization">
+              <Node name="Resources" expanded="True">
+                <Node name="Views" expanded="True">
+                  <Node name="Home" expanded="True">
+                    <Node name="Index.en.resx" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
