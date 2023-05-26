@@ -1,4 +1,6 @@
 using System.Globalization;
+using System.Reflection;
+using LocalizationGlobalization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
 
@@ -10,7 +12,15 @@ builder.Services.AddLocalization(
     opt => {
         opt.ResourcesPath = "Resources";
 });
-builder.Services.AddMvc().AddViewLocalization(Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat.Suffix).AddDataAnnotationsLocalization();
+builder.Services.AddMvc().AddViewLocalization(Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat.Suffix)
+.AddDataAnnotationsLocalization( options =>
+{
+    options.DataAnnotationLocalizerProvider = (type,factory) =>
+    {
+        return factory.Create(typeof(SharedResource));
+    };
+}
+);
 
 builder.Services.Configure<RequestLocalizationOptions>( opt => 
 {

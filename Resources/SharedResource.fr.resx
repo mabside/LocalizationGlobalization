@@ -121,4 +121,36 @@
     <value>Bonjour</value>
     <comment/>
   </data>
+  <data name="Confirm password" xml:space="preserve">
+    <value>Confirmez le mot de passe</value>
+    <comment/>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email (fr)</value>
+    <comment/>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Mot de passe</value>
+    <comment/>
+  </data>
+  <data name="The Email field is not a valid email address." xml:space="preserve">
+    <value>Le champ email est pas une adresse email valide.</value>
+    <comment/>
+  </data>
+  <data name="The Email field is required." xml:space="preserve">
+    <value>Le champ Email est requis. (required)</value>
+    <comment/>
+  </data>
+  <data name="The password and confirmation password do not match." xml:space="preserve">
+    <value>Le mot de passe et la confirmation de passe ne correspondent pas.</value>
+    <comment/>
+  </data>
+  <data name="The Password field is required." xml:space="preserve">
+    <value>Le champ Mot de passe est nécessaire.</value>
+    <comment/>
+  </data>
+  <data name="The {0} must be at least {2} characters long." xml:space="preserve">
+    <value>Le {0} doit être d'au moins {2} caractères. The {0} must be at least {2} characters long.</value>
+    <comment/>
+  </data>
 </root>
