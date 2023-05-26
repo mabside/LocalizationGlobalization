@@ -1,3 +1,7 @@
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.Options;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +11,19 @@ builder.Services.AddLocalization(
         opt.ResourcesPath = "Resources";
 });
 builder.Services.AddMvc().AddViewLocalization(Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat.Suffix).AddDataAnnotationsLocalization();
+
+builder.Services.Configure<RequestLocalizationOptions>( opt => 
+{
+    var supportedCultures = new List<CultureInfo>
+    {
+        new CultureInfo("en"),
+        new CultureInfo("es"),
+        new CultureInfo("fr"),
+    };
+    opt.DefaultRequestCulture = new RequestCulture("en");
+    opt.SupportedCultures = supportedCultures;
+    opt.SupportedUICultures = supportedCultures;
+});
 
 var app = builder.Build();
 
@@ -25,13 +42,15 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-var supportedCultures = new[] {"en", "fr", "es"};
-var localizationOptions = new RequestLocalizationOptions()
-.SetDefaultCulture(supportedCultures[1])
-.AddSupportedCultures(supportedCultures)
-.AddSupportedUICultures(supportedCultures);
+// var supportedCultures = new[] {"en", "fr", "es"};
+// var localizationOptions = new RequestLocalizationOptions()
+// .SetDefaultCulture(supportedCultures[1])
+// .AddSupportedCultures(supportedCultures)
+// .AddSupportedUICultures(supportedCultures);
 
-app.UseRequestLocalization(localizationOptions);
+// app.UseRequestLocalization(localizationOptions);
+
+app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
 app.MapControllerRoute(
     name: "default",

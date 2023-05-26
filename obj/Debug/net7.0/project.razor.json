@@ -18645,6 +18645,11 @@
   "RootNamespace": "LocalizationGlobalization",
   "Documents": [
     {
+      "FilePath": "/Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/Views/Shared/_Culture.cshtml",
+      "TargetPath": "Views\\Shared\\_Culture.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/mubaraqadenle/Documents/Playground/c#Tour/LocalizationGlobalization/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
