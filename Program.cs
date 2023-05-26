@@ -23,6 +23,7 @@ builder.Services.Configure<RequestLocalizationOptions>( opt =>
     opt.DefaultRequestCulture = new RequestCulture("en");
     opt.SupportedCultures = supportedCultures;
     opt.SupportedUICultures = supportedCultures;
+    opt.ApplyCurrentCultureToResponseHeaders = true;
 });
 
 var app = builder.Build();
@@ -42,13 +43,6 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-// var supportedCultures = new[] {"en", "fr", "es"};
-// var localizationOptions = new RequestLocalizationOptions()
-// .SetDefaultCulture(supportedCultures[1])
-// .AddSupportedCultures(supportedCultures)
-// .AddSupportedUICultures(supportedCultures);
-
-// app.UseRequestLocalization(localizationOptions);
 
 app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
